@@ -1,0 +1,98 @@
+author: Example User
+content_filters:
+  clean_patterns:
+    \n{3,}: '
+
+
+      '
+    \s{2,}: ' '
+  ignore_patterns:
+  - ^Page \d+$
+  - ^\s*\d+\s*$
+  - ^Chapter \d+$
+  preserve_patterns:
+  - \*\*.*\*\*
+  - _.*_
+  - '`.*`'
+description: Configuration for extracting Dolmenwood Player's Book content
+document_analysis:
+  body_text_size: 11.0
+  column_detection: true
+  footer_margin: 50.0
+  header_margin: 30.0
+  ignore_footers: true
+  ignore_headers: true
+  reading_order: left_to_right_top_to_bottom
+header_rules:
+  level_1:
+  - bold: true
+    color: '#d2691e'
+    context_patterns:
+    - ^[A-Z]{3,}$
+    description: Primary class headers in orange
+    examples: []
+    size_max: 24.0
+    size_min: 18.0
+  level_2:
+  - bold: true
+    color: '#8b4513'
+    context_patterns: []
+    description: Section headers in brown
+    examples: []
+    size_max: 17.0
+    size_min: 14.0
+  level_3: []
+  level_4: []
+  level_5: []
+  level_6: []
+name: Dolmenwood Player's Book
+notes:
+- Based on analysis of pages 75-78
+- Orange headers are character classes
+- Brown headers are skill sections
+output_settings:
+  chunk_overlap: 0
+  chunk_strategy: semantic_headers
+  format: structured_json
+  include_metadata: true
+  include_page_breaks: false
+  json_indent: 2
+  markdown_headers: true
+  min_chunk_size: 50
+  preserve_spatial_info: true
+pdf_family: dolmenwood_core
+special_elements:
+  illuminated_letters:
+    action: ignore
+    enabled: true
+    max_length: 2
+    patterns: []
+    position: paragraph_start
+    size_threshold: 20.0
+  images:
+    enabled: true
+    extract_images: false
+    formats:
+    - png
+    - jpg
+    - jpeg
+    preserve_captions: true
+  stat_blocks:
+    enabled: true
+    formatting: preserve_structure
+    multi_line: true
+    patterns:
+    - ^(STR|DEX|CON|INT|WIS|CHA):\s*\d+
+    - ^(AC|HD|HP):\s*[\d+/-]+
+    separator_patterns:
+    - '[,;]'
+    - \n
+    - \s{2,}
+  tables:
+    detection_method: lines_strict
+    enabled: true
+    extract_to_csv: false
+    min_columns: 2
+    min_rows: 2
+    preserve_formatting: true
+version: '1.0'

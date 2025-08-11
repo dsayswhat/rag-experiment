@@ -1,0 +1,87 @@
+╭───────────────────────────────────────────────────╮
+│ ✻ Welcome to Claude Code!                         │
+│                                                   │
+│   /help for help, /status for your current setup  │
+│                                                   │
+│   cwd: /home/dsayswhat/personal/dolmenrag         │
+╰───────────────────────────────────────────────────╯
+
+> /mcp 
+  ⎿  (no content)
+
+> using the dolmenwood mcp server as a reference, how do I use magic in combat?
+
+● dolmenwood - semantic_search (MCP)(query: "magic in combat spellcasting rules", content_types: ["rule","example"], limit: 10)
+  ⎿  Found 10 result(s) for: 'magic in combat spellcasting rules'
+
+     ## Result 1: Example of Combat
+     … +3036 lines (ctrl+r to expand)
+
+● In Dolmenwood combat, magic follows these key rules:
+
+  Spell Casting in Combat:
+  - Must be declared before initiative is rolled
+  - Cannot move in the same round you cast a spell
+  - If you lose initiative and take damage or fail a saving throw, the spell is disrupted and lost
+  - Spells take effect during the "magic phase" of combat sequence
+
+  Combat Sequence (with magic):
+  1. Declarations (spells must be declared here)
+  2. Initiative roll
+  3. Winning side acts:
+    - Movement (spell casters can't move)
+    - Missile attacks
+    - Magic phase (spells, runes, glamours, magic items)
+    - Melee attacks
+
+  Key Restrictions:
+  - Line of sight required unless spell states otherwise
+  - No movement when casting spells or using fairy runes
+  - Disruption risk - if attacked successfully before your initiative, spell fails and is lost from memory
+
+  Magic Items & Other Magic:
+  - Magic items can be used normally even on unstable surfaces
+  - Fairy glamours work like spells but can't be disrupted
+  - Turning undead happens in the magic phase
+  - Some magic effects (like healing potions) work instantly
+
+  Tactical Considerations:
+  - Spell casters are vulnerable when casting due to movement restriction
+  - Losing initiative while casting is risky - you might lose the spell entirely
+  - Magic users often need protection from melee fighters
+  - Magic items offer more reliable magical effects in combat since they can't be disrupted
+
+> what characters will I encounter at the Drune cottage?
+
+● dolmenwood - semantic_search (MCP)(query: "Drune cottage characters NPCs", content_types: ["location","lore"], source_books: ["campaign_book"], limit: 10)
+  ⎿  No results found for query: 'Drune cottage characters NPCs'
+
+● dolmenwood - semantic_search (MCP)(query: "Drune cottage", limit: 10)
+  ⎿  Found 10 result(s) for: 'Drune cottage'
+
+     ## Result 1: 0507 Drune Lodge
+     … +1685 lines (ctrl+r to expand)
+
+● At the Drune cottage in hex 0810, you'll encounter:
+
+  Main Inhabitants:
+  - Aethogrym - An Audrune (guardian of standing stones) who is often absent, wandering the forest and ley lines around Golokstone (hex 0910)
+  - Maedred - Aethogrym's wife, a Drunewife who stays at the cottage weaving, singing, and creating pottery. She also creates magical clay servitors called kilnlings
+  - Pollith Bonewort - Their daughter, a Braithmaid (adolescent Drune girl) who roams the woods during the day singing haunting magical songs
+
+  Guardians:
+  - 3 Kilnlings - Magical clay constructs created by Maedred (1 sneak, 2 defenders) that guard the path and cottage
+
+  Potential Encounters:
+  - Thrattlewhit - A barrowbogey chief who is infatuated with Pollith and creeps around at night trying to catch glimpses of her. He carries the magic sword Alfhame
+  - 24 other barrowbogeys led by Thrattlewhit, dwelling in ancient burial mounds in the area
+
+  Important Notes:
+  - The cottage is magically concealed - the path cannot be found without aid, only by following someone who knows the secret way
+  - The cottage sits in an enchanted glade where spring always reigns and blossoms drift through the air
+  - Pollith desires contact with the witches of Dolmenwood and wants to be rid of Thrattlewhit's unwanted attention
+  - There's a 2-in-6 chance of encountering Pollith during the day or Thrattlewhit at night
+
+  The cottage represents a typical Drune family unit, with the male Audrune managing mystical duties while the Drunewife handles domestic magic and their daughter learns the ways that will lead her to
+  either marriage or joining the witches.
+
